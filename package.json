@@ -1,0 +1,23 @@
+{
+  "name": "tp4-dai",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/FedericoDeLaPuenteSztajer/Tp4-DAI#readme",
+  "bugs": {
+    "url": "https://github.com/FedericoDeLaPuenteSztajer/Tp4-DAI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoDeLaPuenteSztajer/Tp4-DAI.git"
+  },
+  "license": "ISC",
+  "author": "Federico",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
