@@ -1,14 +1,19 @@
 import express from "express";
+import time from "./time.js";
 
-const app= express();
-const port= 3000;
+const app = express();
+const textBienvenida = "Bienvenido!!! ||| / -> Bienvenida ||| /hora -> Hora actual ||| /fecha-completa -> Fecha completa actual"
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    res.send(textBienvenida)
 })
 
-app.listen(port, () => {
-    console.log("Listening port " + port)
+app.get('/hora', (req, res) => {
+    res.send(time.GetHora())
 })
 
-export default 
+app.get('/fecha-completa', (req, res) => {
+    res.send(time.GetFechaCompleta())
+})
+
+export default app
